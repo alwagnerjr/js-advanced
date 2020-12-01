@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0 50px;
+}
+
+.cart-button {
+  padding: 18px 24px;
+  background: #f16d7f;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+} 
+
+h1 {
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 55px;
+  letter-spacing: 0.025em;
+  color: #222222;
+
+}
+
+.goods-list{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.goods-item img {
+  height: 220px;
+  width: auto;
+}
