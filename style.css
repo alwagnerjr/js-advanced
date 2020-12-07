@@ -10,7 +10,7 @@ body {
 header {
   display: flex;
   justify-content: space-around;
-  margin: 10px 0 50px;
+  margin: 15px 0 50px;
 }
 
 .cart-button {
@@ -23,7 +23,7 @@ header {
 } 
 
 h1 {
-  font-size: 27px;
+  font-size: 25px;
   font-weight: 500;
   line-height: 55px;
   letter-spacing: 0.025em;
