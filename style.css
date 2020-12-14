@@ -13,22 +13,84 @@ header {
   margin: 15px 0 50px;
 }
 
-.cart-button {
-  padding: 18px 24px;
-  background: #f16d7f;
-  border: none;
-  color: white;
-  font-size: 16px;
-  font-weight: 700;
-} 
-
 h1 {
   font-size: 25px;
   font-weight: 500;
   line-height: 55px;
   letter-spacing: 0.025em;
   color: #222222;
+}
 
+.cart {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+} 
+
+header .cart .redCircle {
+  position: absolute;
+  left: 26px;
+  top: 5px;
+}
+
+header .cart span #num {
+  position: absolute;
+  top: -13px;
+  left: 33px;
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+}
+
+header .cart:hover #cart-inner{
+  display: block;
+}
+
+header .cart:hover .basket_img {
+  transition: 0.25s;
+  transform: scale(1.2);
+}
+
+header .cart:hover .redCircle {
+  transition: 0.25s;
+  transform: scale(1.2);
+}
+
+header .cart:hover span {
+  transition: 0.25s;
+  font-size: 15px;
+}
+
+header .cart #cart-inner {
+  display: none;
+  width: 262px;
+  min-height: 440px;
+  background-color: #ffff;
+  border-radius: 5px;
+  padding: 30px 15px 20px;
+  position: absolute;
+  top: 35px;
+  left: -14px;
+  z-index: 1;
+}
+
+header .cart .cart_item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .cart .cart_item img {
+  display: block;
+  width: 72px;
+  height: 85px;
+  transition: 0.3s;
+}
+
+header .cart .cart_item img:hover {
+  transform: scale(1.2);
 }
 
 .goods-list{

@@ -5,14 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous">
     <title>GB Shop</title>
     <script src="./script.js"></script>
+    <script src="./basket.js"></script>
 </head>
 <body>
 
     <header>
         <h1>Всякая фигня, ей-богу!</h1>
-        <button class="cart-button" type="button">Корзина</button>
+        <div class="cart">
+            <img class="basket_img" src="../img/icon_cart.svg" alt="basket">
+            <img class="redCircle" src="../img/cartRedCircle.png" alt="circle">
+            <span id="num"></span>
+            <div id="cart-inner">
+                <div class="cart_items">                           
+                </div>
+                <div>
+                    <hr>
+                    <div class="cart_total">
+                        <p>TOTAL</p>
+                        <p>$<span id="cart-sum"></span></p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        
     </header>
     <main>
         <div class="goods-list"></div>

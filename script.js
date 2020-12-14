@@ -21,7 +21,7 @@ const main = () => {
     const goodsItemsList = items
       .map((item) => createGoodsItemTemplate(item))
       .join("");
-    console.log(goodsItemsList);
+    // console.log(goodsItemsList);
     document.querySelector(".goods-list").innerHTML = goodsItemsList;
   };
 
